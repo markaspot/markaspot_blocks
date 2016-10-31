@@ -1,5 +1,9 @@
 <?php
 
+namespace Drupal\markaspot_blocks\Plugin\Block;
+
+use Drupal\Core\Block\BlockBase;
+
 /**
  * Provides a 'Button Action' Block
  *
@@ -8,20 +12,8 @@
  *   admin_label = @Translation("Markaspot Stage Add block"),
  * )
  */
-
-namespace Drupal\markaspot_blocks\Plugin\Block;
-
-use Drupal\Core\Block\BlockBase;
-
 class MarkaspotStageAddBlock extends BlockBase {
-  /**
-   * Provides a 'Stage Add block' block.
-   *
-   * @Block(
-   *   id = "Markaspot Stage Add Request Block",
-   *   admin_label = @Translation("Mark-a-Spot: Stage Add Request block")
-   * )
-   */
+
   public function build() {
     return array(
       '#type' => 'markup',
