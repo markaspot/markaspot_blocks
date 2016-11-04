@@ -25,14 +25,14 @@ class MarkaspotStageBlock extends BlockBase {
           
          <div class="round-button col-xs-3">
              <a class="btn btn-default btn-circle btn-lg" href="/open311"><i class="fa fa-pie-chart"></i></a>
-             <p>' . $this->t('Open311, the GeoReport v2 API of Mark-a-Spot') . '</p>
+             <p>' . $this->t('Open311 - Use the GeoReport v2 API of Mark-a-Spot') . '</p>
          </div>
          <div class="round-button col-xs-3">
              <a class="btn btn-default btn-circle btn-lg" href="/requests"><i class="fa fa-eye"></i></a>
              <p>' . $this->t('Search and check for requests') . '</p>
          </div>
          <div class="round-button col-xs-3">
-             <a class="btn btn-default btn-circle btn-lg" href="/user"><i class="fa fa-user"></i></a>
+             <a class="btn btn-default btn-circle btn-lg" href="/user/login"><i class="fa fa-user"></i></a>
              <p>' . $this->t('Already have an account?') . '</p>
          </div>
        '
