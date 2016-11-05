@@ -19,11 +19,11 @@ class MarkaspotStageAddBlock extends BlockBase {
       '#type' => 'markup',
       '#markup' => '
         <div class="row">
-        <div class="button-sidekick col-xs-3">
+        <div class="button-sidekick col-xs-2">
             <p class="btn btn-circle btn-lg"><i class="fa fa-map-marker"></i></p>
         </div>
-        <div class="button-add col-xs-9">
-            <p><a href="node/add/service_request">Add a report</a></p>
+        <div class="button-add col-xs-10">
+            <p><a href="node/add/service_request">Place a service request</a></p>
         </div>
         </div>
        '
