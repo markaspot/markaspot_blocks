@@ -3,17 +3,20 @@
 namespace Drupal\markaspot_blocks\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+
 /**
- * Provides a 'Button Action' Block
+ * Provides a 'Button Action' Block.
  *
  * @Block(
  *   id = "markaspot_side_block",
  *   admin_label = @Translation("Markaspot Side Action block"),
  * )
  */
-
 class MarkaspotSideBlock extends BlockBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     return array(
       '#type' => 'markup',
@@ -24,7 +27,8 @@ class MarkaspotSideBlock extends BlockBase {
             <li class="mas-button"><a href="/report" data-rel="popup" title="" role="button" aria-label=""><span class="fa fa-plus"></span><span class="add">Add Service request</span></a></li>
           </ul>
         </div>
-       '
+       ',
     );
   }
+
 }

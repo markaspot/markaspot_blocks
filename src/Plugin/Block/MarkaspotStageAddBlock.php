@@ -5,7 +5,7 @@ namespace Drupal\markaspot_blocks\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides a 'Button Action' Block
+ * Provides a 'Button Action' Block.
  *
  * @Block(
  *   id = "markaspot_base_add_block",
@@ -14,6 +14,9 @@ use Drupal\Core\Block\BlockBase;
  */
 class MarkaspotStageAddBlock extends BlockBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     return array(
       '#type' => 'markup',
@@ -23,10 +26,10 @@ class MarkaspotStageAddBlock extends BlockBase {
             <p class="btn btn-circle btn-lg"><i class="fa fa-map-marker"></i></p>
         </div>
         <div class="button-add col-xs-10">
-            <p><a href="node/add/service_request">Place a service request</a></p>
+            <p><a href="report">Place a service request</a></p>
         </div>
-        </div>
-       '
+        </div>',
     );
   }
+
 }

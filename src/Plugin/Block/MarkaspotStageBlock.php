@@ -3,17 +3,20 @@
 namespace Drupal\markaspot_blocks\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+
 /**
- * Provides a 'Button Action' Block
+ * Provides a 'Button Action' Block.
  *
  * @Block(
  *   id = "markaspot_base_block",
  *   admin_label = @Translation("Markaspot Stage block"),
  * )
  */
-
 class MarkaspotStageBlock extends BlockBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     return array(
       '#type' => 'markup',
@@ -35,7 +38,8 @@ class MarkaspotStageBlock extends BlockBase {
              <a class="btn btn-default btn-circle btn-lg" href="/user/login"><i class="fa fa-user"></i></a>
              <p>' . $this->t('Already have an account?') . '</p>
          </div>
-       '
+       ',
     );
   }
+
 }

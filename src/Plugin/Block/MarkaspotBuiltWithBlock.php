@@ -14,6 +14,9 @@ use Drupal\Core\Block\BlockBase;
  */
 class MarkaspotBuiltWithBlock extends BlockBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     return array(
       '#type' => 'markup',
@@ -22,11 +25,12 @@ class MarkaspotBuiltWithBlock extends BlockBase {
              Built with <a class="mas" href="http://mark-a-spot.com"><span>Mark-a-Spot</span></a>
          </div>
        ',
-      '#attached' => array (
-        'library' => array (
-          'markaspot_blocks/markaspot_blocks'
-        )
-      )
+      '#attached' => array(
+        'library' => array(
+          'markaspot_blocks/markaspot_blocks',
+        ),
+      ),
     );
   }
+
 }

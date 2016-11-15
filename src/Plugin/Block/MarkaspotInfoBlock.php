@@ -14,6 +14,9 @@ use Drupal\Core\Block\BlockBase;
  */
 class MarkaspotInfoBlock extends BlockBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     return array(
       '#type' => 'markup',
@@ -23,11 +26,12 @@ class MarkaspotInfoBlock extends BlockBase {
                 mapping platform without the civic context by customizing taxonomy terms and hiding the status field.</p>
          </div>
        ',
-      '#attached' => array (
-        'library' => array (
-          'markaspot_blocks/markaspot_blocks'
-        )
-      )
+      '#attached' => array(
+        'library' => array(
+          'markaspot_blocks/markaspot_blocks',
+        ),
+      ),
     );
   }
+
 }
