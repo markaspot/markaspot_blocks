@@ -21,7 +21,7 @@ class MarkaspotSideBlock extends BlockBase {
         <div class="mas-action">
           <ul class="theme-grey orientation-vertical col-3">
             <li class="mas-button"><a href="#" role="button" aria-label=""><span class="fa fa-map"></span><span class="">Toggle Map</span></a></li>
-            <li class="mas-button"><a href="/node/add/service_request" data-rel="popup" title="" role="button" aria-label=""><span class="fa fa-plus"></span><span class="add">Add Service request</span></a></li>
+            <li class="mas-button"><a href="/report" data-rel="popup" title="" role="button" aria-label=""><span class="fa fa-plus"></span><span class="add">Add Service request</span></a></li>
           </ul>
         </div>
        '
