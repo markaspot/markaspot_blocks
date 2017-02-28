@@ -4,4 +4,3 @@ core: 8.x
 description: 'Provides several blocks in code for a Mark-a-Spot Installation'
 type: module
 dependencies:
-  - masradix
